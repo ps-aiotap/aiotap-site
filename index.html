@@ -1,0 +1,84 @@
+<!-- index.html for AioTap personal website -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pushpendu | AioTap</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script>
+    // Dark mode support
+    if (
+      localStorage.theme === 'dark' ||
+      (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  </script>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
+  <header class="p-6 text-center border-b dark:border-gray-700">
+    <h1 class="text-4xl font-bold">👋 Hi, I'm Pushpendu</h1>
+    <p class="mt-2 text-lg">Founder-Engineer @ AioTap | AI × Fintech | Building from India for the World</p>
+  </header>
+
+  <main class="p-6 max-w-4xl mx-auto">
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold mb-4">🚀 What I'm Building</h2>
+      <div class="space-y-4">
+        <div>
+          <h3 class="text-xl font-bold">IndexCopilot.ai</h3>
+          <p>An AI-powered mutual fund discovery and portfolio management tool for Indian index funds.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold">IndexCopilot</h3>
+          <p>Public portfolio tracker with modular Streamlit UI, CSV upload, and visual analytics.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold">StoreLoop</h3>
+          <p>Multi-seller e-commerce engine for artisan products. Built with Django, Tailwind, and Razorpay.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold mb-4">⚙️ How I Work</h2>
+      <ul class="list-disc list-inside space-y-2">
+        <li>Build modular, testable, AI-enhanced applications fast</li>
+        <li>Use AI for scaffolding, diffing, and refactoring</li>
+        <li>Apply prompt engineering to ship smarter features</li>
+        <li>Split work cleanly across frontend, backend, orchestration</li>
+      </ul>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold mb-4">🎯 Goals</h2>
+      <ul class="list-disc list-inside space-y-2">
+        <li>Build AI-powered tools in fintech, healthcare, and compliance</li>
+        <li>Launch rapid prototypes and niche SaaS via AioTap</li>
+        <li>Collaborate with startups in India, Canada, and beyond</li>
+      </ul>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold mb-4">🧠 Skills & Tools</h2>
+      <p>Python, Django, FastAPI, Streamlit, React.js, Tailwind, PostgreSQL, Redis, Docker, OpenAI, Groq, OpenRouter, Railway, GitHub Actions</p>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold mb-4">🤝 Connect</h2>
+      <p>
+        <a href="https://github.com/ps-aiotap" class="text-blue-400 hover:underline">GitHub</a> | 
+        <a href="https://www.linkedin.com/in/ps-aiotap/" class="text-blue-400 hover:underline">LinkedIn</a>
+      </p>
+      <p class="mt-2">Reach out for: AI + Fintech gigs, product collabs, or code reviews</p>
+    </section>
+  </main>
+
+  <footer class="text-center text-sm text-gray-500 dark:text-gray-400 py-6 border-t dark:border-gray-700">
+    &copy; 2025 Pushpendu Sharma | AioTap
+  </footer>
+</body>
+</html>
